@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        >
+        <LinearLayout
+            android:id="@+id/conteneur_pseudo_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/pseudo_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pseudo"
+                android:textSize="20sp"
+                android:layout_weight="1">
+
+            </TextView>
+            <EditText
+                android:id="@+id/pseudo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre pseudo"
+                android:text=""
+                android:layout_marginStart="10dp"
+                android:textSize="19sp"
+                android:layout_weight="8">
+
+            </EditText>
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OK"
+                android:backgroundTint="#2196F3">
+
+            </Button>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>

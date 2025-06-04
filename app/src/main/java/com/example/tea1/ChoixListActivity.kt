@@ -52,9 +52,9 @@ class ChoixListActivity : AppCompatActivity() {
                     val intent = Intent(this, ShowListActivity::class.java)
                     intent.putExtra("pseudo", pseudoRecu)
                     intent.putExtra("liste_name", liste.getTitreListeToDo())
-                    startActivity(intent)
+                    startActivity(intent) //on lance l'autre activité
                 }
-                listOfLists.addView(listView)
+                listOfLists.addView(listView) 
             }
         }
 
